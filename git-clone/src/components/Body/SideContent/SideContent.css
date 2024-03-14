@@ -1,0 +1,45 @@
+.account {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.aicon {
+  margin-right: 0.7em;
+}
+.repoTitle {
+  padding-left: 10px;
+}
+.recent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+Button {
+  border: none;
+}
+.sidebar {
+  padding: 20px;
+}
+
+.sidebar-heading {
+  margin-bottom: 10px; /* Increase the spacing between heading and repo list */
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repo-list li {
+  margin-bottom: 5px; /* Decrease spacing between repository titles */
+}
+
+.repo-list li a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+}
+.sidebar-heading {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}

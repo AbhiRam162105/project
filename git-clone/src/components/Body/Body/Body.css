@@ -1,0 +1,9 @@
+.BodyContent {
+  display: flex;
+}
+.side {
+  width: 20vw;
+  height: 92vh;
+
+  border-right: 1px solid black;
+}

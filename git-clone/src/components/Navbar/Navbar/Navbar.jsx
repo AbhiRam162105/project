@@ -8,15 +8,21 @@ import Prbutton from "../PullRequest/Prbutton";
 import NotiButton from "../Notificationbutton/NotiButton";
 import "./Navbar.css";
 import AvatarIcon from "../Avatar/Avatar";
-import { ListUnorderedIcon } from "@primer/octicons-react";
+import {
+  IssueOpenedIcon,
+  ListUnorderedIcon,
+  LogoGithubIcon,
+  MarkGithubIcon,
+} from "@primer/octicons-react";
 
 const Navbar = () => {
   return (
     <div className="navbarMain">
-      <div className="leftnva">
+      <div className="leftnav">
         <div className="logo">
-          <h2>Github</h2>
+          <MarkGithubIcon size={"medium"} />
         </div>
+        <div className="name">Dashboard</div>
       </div>
 
       <div className="rightnav">
