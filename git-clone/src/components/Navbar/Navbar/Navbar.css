@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbarMain {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(182, 182, 182);
+  border-bottom: 1px solid black;
+  padding: 8px 20px;
+}
+.rightnav,
+.leftnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.51vw;
+}
+.verticalLine {
+  margin-right: 1vw;
+}

@@ -1,43 +1,19 @@
-import React from "react";
+import { ThemeProvider, BaseStyles } from "@primer/react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Navbarnew from "./components/Navbar/Navbar";
-import NavScrollExample from "./components/Navbar/Navbar";
 
-// Header component
-const Header = () => (
-  <header>
-    <h1>Dashboard</h1>
-    <input type="text" placeholder="Type to search" />
-  </header>
-);
+import CreateNew from "./components/Navbar/CreateNew/CreateNewButton";
+import Navbar from "./components/Navbar/Navbar/Navbar";
+import { HorizontalRuleIcon } from "@primer/octicons-react";
 
-function Main() {
+const App = () => {
   return (
-    <main>
-      <h2>Welcome to GitHub</h2>
-      {/* Add more main elements here */}
-    </main>
+    <ThemeProvider>
+      <BaseStyles>
+        <div>
+          <Navbar />
+        </div>
+      </BaseStyles>
+    </ThemeProvider>
   );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <p>© 2022 GitHub, Inc.</p>
-      {/* Add more footer elements here */}
-    </footer>
-  );
-}
-
-function App() {
-  return (
-    <div className="App">
-      <NavScrollExample />
-      <Main />
-      <Footer />
-    </div>
-  );
-}
-
+};
 export default App;
