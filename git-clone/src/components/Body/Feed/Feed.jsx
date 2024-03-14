@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
+import "./Feed.css";
 
 const repositories = [
   {
@@ -60,7 +61,7 @@ export default function Feed() {
             display: "flex",
             flexDirection: "column",
             gap: 2,
-            margin: "3vw 3vw",
+            margin: "1vw 3vw",
           }}
         >
           {repositories.map((repo, index) => (

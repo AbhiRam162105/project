@@ -15,7 +15,7 @@ const Sidebar = ({ repositories = [] }) => {
   const [showLess, setShowLess] = useState(false); // Initially show all repositories
 
   const loadMoreRepos = () => {
-    setVisibleRepos((prevVisibleRepos) => prevVisibleRepos + 5);
+    setVisibleRepos((prevVisibleRepos) => prevVisibleRepos + 15);
     setShowLess(true);
     // Increase by 5 each time
   };

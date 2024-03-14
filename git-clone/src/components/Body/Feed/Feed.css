@@ -1,4 +1,7 @@
-.cards {
+.home {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.homeText {
+  margin: 1vw 0vw 0vw 3vw;
 }
