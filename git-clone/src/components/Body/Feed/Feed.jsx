@@ -19,22 +19,27 @@ const repositories = [
     url: "https://github.com/mockuser/mockrepo2",
   },
   {
-    title: "Mock Repository 3",
+    title: "Mock Repository 2",
     description: "Another mock repository to showcase the sidebar component.",
     url: "https://github.com/mockuser/mockrepo2",
   },
   {
-    title: "Mock Repository 4",
+    title: "Mock Repository 2",
     description: "Another mock repository to showcase the sidebar component.",
     url: "https://github.com/mockuser/mockrepo2",
   },
   {
-    title: "Mock Repository 5",
+    title: "Mock Repository 2",
     description: "Another mock repository to showcase the sidebar component.",
     url: "https://github.com/mockuser/mockrepo2",
   },
   {
-    title: "Mock Repository 6",
+    title: "Mock Repository 2",
+    description: "Another mock repository to showcase the sidebar component.",
+    url: "https://github.com/mockuser/mockrepo2",
+  },
+  {
+    title: "Mock Repository 2",
     description: "Another mock repository to showcase the sidebar component.",
     url: "https://github.com/mockuser/mockrepo2",
   },
@@ -43,53 +48,88 @@ const repositories = [
 
 export default function Feed() {
   return (
-    <>
-      <div className="home">
-        <div className="homeText">
-          <h2>Home</h2>
-        </div>
-        <div className="filter">
-          <div className="feedback"></div>
-          <div className="filtering"></div>
-        </div>
-      </div>
-      <Box sx={{ height: "95vh", overflowY: "auto" }}>
-        {" "}
-        {/* Outer Box for scrolling */}
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 2,
-            margin: "1vw 3vw",
-          }}
-        >
-          {repositories.map((repo, index) => (
-            <Box key={index} sx={{ minWidth: "50vw", width: "100%" }}>
-              <Card variant="outlined">
-                <CardContent>
-                  <Typography variant="h5" component="div">
-                    {repo.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {repo.description}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button
-                    size="small"
-                    href={repo.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Repository
-                  </Button>
-                </CardActions>
-              </Card>
-            </Box>
-          ))}
-        </Box>
+    <Box
+      sx={{
+        display: "flex",
+        height: "95vh",
+        overflowY: "auto",
+        color: "white",
+      }}
+    >
+      <Box
+        sx={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          gap: 2,
+          margin: "1vw 3vw",
+        }}
+      >
+        {repositories.map((repo, index) => (
+          <Box key={index} sx={{ width: 675 }}>
+            <Card variant="outlined">
+              <CardContent>
+                <Typography variant="h5" component="div">
+                  {repo.title}
+                </Typography>
+                <Typography variant="body2" color="whitesmoke">
+                  {repo.description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small"
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Repository
+                </Button>
+              </CardActions>
+            </Card>
+          </Box>
+        ))}
       </Box>
-    </>
+      <Box
+        sx={{
+          flex: 1,
+          padding: "16px",
+          display: "flex",
+          flexDirection: "column",
+          gap: 2,
+          overflowY: "auto",
+          marginLeft: "32px",
+        }}
+      >
+        {/* Example GitHub-style side card */}
+        <Card sx={{ width: 300 }}>
+          <CardContent>
+            <Typography variant="h5" component="div">
+              GitHub Trending
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Check out the most popular repositories on GitHub.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">View Trending</Button>
+          </CardActions>
+        </Card>
+        <Card sx={{ width: 300 }}>
+          <CardContent>
+            <Typography variant="h5" component="div">
+              GitHub Trending
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Check out the most popular repositories on GitHub.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">View Trending</Button>
+          </CardActions>
+        </Card>
+        {/* Add more GitHub-style side cards as needed */}
+      </Box>
+    </Box>
   );
 }

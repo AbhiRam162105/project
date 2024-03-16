@@ -1,4 +1,4 @@
-import { ThemeProvider, BaseStyles } from "@primer/react";
+import { ThemeProvider, BaseStyles, theme } from "@primer/react";
 import "./App.css";
 
 import CreateNew from "./components/Navbar/CreateNew/CreateNewButton";
@@ -9,12 +9,10 @@ import Body from "./components/Body/Body/Body";
 const App = () => {
   return (
     <ThemeProvider>
-      <BaseStyles>
-        <div>
-          <Navbar />
-          <Body />
-        </div>
-      </BaseStyles>
+      <div className="App">
+        <Navbar />
+        <Body />
+      </div>
     </ThemeProvider>
   );
 };
