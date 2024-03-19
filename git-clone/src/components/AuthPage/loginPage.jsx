@@ -1,7 +1,8 @@
 import React from "react";
-
+import { PageHeader } from "@primer/react/drafts";
 import logo from "./github-mark-white.svg";
 import "./loginPage.css";
+import { Box, Button } from "@primer/react";
 
 function LoginPage() {
   return (
@@ -12,44 +13,52 @@ function LoginPage() {
 
       <div className="login-box-wrapper">
         <div className="login-heading">
-          <h1>Add an account</h1>
+          <Box
+            sx={{
+              padding: 1,
+            }}
+          >
+            <PageHeader>
+              <PageHeader.TitleArea variant="large">
+                <PageHeader.Title>Sign In</PageHeader.Title>
+              </PageHeader.TitleArea>
+            </PageHeader>
+          </Box>
         </div>
         <div className="login-box">
           <div>
-            <label className="label">Email address</label>
+            <label class="label">Email address</label>
             <input
-              autoComplete="off"
+              autocomplete="off"
               name="Email"
               id="Email"
-              className="input"
+              class="input"
               type="email"
             />
           </div>
           <div className="div">
-            <label className="label">Password</label>
+            <label class="label">Password</label>
             <input
-              autoComplete="off"
+              autocomplete="off"
               name="Email"
               id="Email"
-              className="input"
+              class="input"
               type="password"
             />
           </div>
 
-          <div className="submit-btn">
-            <button className="submit-btn" type="submit">
-              Sign in
-            </button>
-          </div>
+          <Button variant="primary" sx={{ width: 250 }}>
+            Sign Up
+          </Button>
         </div>
-      </div>
-
-      <div className="passkey-signin">
-        <p className="passkey">Sign in with a passkey</p>
-
-        <p className="create-account">
-          Create an account ? <span className="signup">Sign up</span>
-        </p>
+        <div className="pass-box">
+          <p>
+            <a href="/signin">Sign in with a passkey</a>
+          </p>
+          <p>
+            New to GitHub? <a href="/signup">Create an account</a>
+          </p>
+        </div>
       </div>
     </div>
   );

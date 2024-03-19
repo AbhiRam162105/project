@@ -10,56 +10,60 @@ import { MarkGithubIcon } from "@primer/octicons-react";
 
 const repositories = [
   {
-    title: "Mock Repository 1",
-    description: "This is a mock repository for demonstration purposes.",
-    url: "https://github.com/mockuser/mockrepo1",
+    title: "React",
+    description:
+      "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    url: "https://github.com/facebook/react",
   },
   {
-    title: "Mock Repository 2",
-    description: "Another mock repository to showcase the sidebar component.",
-    url: "https://github.com/mockuser/mockrepo2",
+    title: "Vue.js",
+    description: "The Progressive JavaScript Framework.",
+    url: "https://github.com/vuejs/vue",
   },
   {
-    title: "Mock Repository 3",
-    description: "Yet another mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Angular",
+    description: "One framework. Mobile & desktop.",
+    url: "https://github.com/angular/angular",
   },
   {
-    title: "Mock Repository 4",
-    description: "Mock repository number four.",
-    url: "https://github.com/mockuser/mockrepo4",
+    title: "Django",
+    description:
+      "A high-level Python Web framework that encourages rapid development and clean, pragmatic design.",
+    url: "https://github.com/django/django",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "Flask",
+    description: "A lightweight WSGI web application framework.",
+    url: "https://github.com/pallets/flask",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "Express",
+    description: "Fast, unopinionated, minimalist web framework for Node.js",
+    url: "https://github.com/expressjs/express",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "Laravel",
+    description: "The PHP Framework For Web Artisans.",
+    url: "https://github.com/laravel/laravel",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "Spring Boot",
+    description:
+      "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can just run.",
+    url: "https://github.com/spring-projects/spring-boot",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "Ruby on Rails",
+    description:
+      "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby.",
+    url: "https://github.com/rails/rails",
   },
   {
-    title: "Mock Repository 5",
-    description: "Fifth mock repository for demonstration.",
-    url: "https://github.com/mockuser/mockrepo5",
+    title: "ASP.NET Core",
+    description:
+      "ASP.NET Core is a free and open-source web framework, a cross-platform successor to ASP.NET, and is used to build modern, cloud-based, and internet-connected applications.",
+    url: "https://github.com/dotnet/aspnetcore",
   },
-  // Add more mock repositories as needed
 ];
 
 export default function Feed() {
