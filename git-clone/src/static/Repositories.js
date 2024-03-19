@@ -1,79 +1,68 @@
-const Repositories = [
+const repositories = [
   {
-    title: "Mock Repository 1",
-    description: "This is a mock repository for demonstration purposes.",
-    url: "https://github.com/mockuser/mockrepo1",
-    thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
-  },
-  {
-    title: "Mock Repository 2",
-    description: "Another mock repository to showcase the sidebar component.",
-    url: "https://github.com/mockuser/mockrepo2",
-    thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
-  },
-  {
-    title: "Mock Repository 3",
+    title: "React",
     description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+      "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    url: "https://github.com/facebook/react",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 4",
-    description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Vue.js",
+    description: "The Progressive JavaScript Framework.",
+    url: "https://github.com/vuejs/vue",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 5",
-    description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Angular",
+    description: "One framework. Mobile & desktop.",
+    url: "https://github.com/angular/angular",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 6",
+    title: "Django",
     description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+      "A high-level Python Web framework that encourages rapid development and clean, pragmatic design.",
+    url: "https://github.com/django/django",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 7",
-    description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Flask",
+    description: "A lightweight WSGI web application framework.",
+    url: "https://github.com/pallets/flask",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 8",
-    description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Express",
+    description: "Fast, unopinionated, minimalist web framework for Node.js",
+    url: "https://github.com/expressjs/express",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 9",
-    description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+    title: "Laravel",
+    description: "The PHP Framework For Web Artisans.",
+    url: "https://github.com/laravel/laravel",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 10",
+    title: "Spring Boot",
     description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+      "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can just run.",
+    url: "https://github.com/spring-projects/spring-boot",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
   {
-    title: "Mock Repository 11",
+    title: "Ruby on Rails",
     description:
-      "Yet another mock repository to test the sidebar functionality.",
-    url: "https://github.com/mockuser/mockrepo3",
+      "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby.",
+    url: "https://github.com/rails/rails",
+    thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
+  },
+  {
+    title: "ASP.NET Core",
+    description:
+      "ASP.NET Core is a free and open-source web framework, a cross-platform successor to ASP.NET, and is used to build modern, cloud-based, and internet-connected applications.",
+    url: "https://github.com/dotnet/aspnetcore",
     thumbnail: "https://avatars.githubusercontent.com/u/92997159?v=4",
   },
 ];
-
-export default Repositories;
+export default repositories;
