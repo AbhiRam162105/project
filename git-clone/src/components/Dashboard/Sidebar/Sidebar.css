@@ -1,34 +1,81 @@
 /* Sidebar.css */
-.sidebar {
-  width: 250px;
+.side-bar {
   height: 100vh;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  width: 200px;
+  background-color: #0c1116;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
-.sidebar ul {
-  list-style-type: none;
+.title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.side-bar-options {
+  width: 100%;
+  height: calc(
+    100% - 70px
+  ); /* Adjusted to account for the title and its margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start to mimic GitHub's sidebar */
+  gap: 20px;
+  font-size: 16px; /* Adjusted for better readability */
+  font-weight: 500;
+}
+
+.upper-options,
+.lower-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar li {
-  margin-bottom: 20px;
-}
-
-.sidebar a {
-  color: #c9d1d9;
-  text-decoration: none;
+.side-bar ul li {
+  margin: 10px 0;
   display: flex;
   align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: font-weight 0.2s ease;
 }
 
-.sidebar a:hover {
-  color: #fff;
+.side-bar ul li:hover {
+  font-weight: 700;
 }
 
-.sidebar svg {
-  margin-right: 10px;
+.scribble:hover {
+  cursor: pointer;
+}
+
+.pdf-view-btn {
+  width: 100px;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  color: black;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-view-btn:hover {
+  background-color: #d4d4d4;
 }

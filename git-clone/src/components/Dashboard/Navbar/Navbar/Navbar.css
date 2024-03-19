@@ -30,3 +30,13 @@
 .verticalLine {
   margin-right: 1vw;
 }
+.leftnav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

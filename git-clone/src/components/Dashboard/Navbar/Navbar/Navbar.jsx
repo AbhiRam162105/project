@@ -14,15 +14,22 @@ import {
   LogoGithubIcon,
   MarkGithubIcon,
 } from "@primer/octicons-react";
+import TemporaryDrawer from "../../Sidebar/Sidebar";
 
 const Navbar = () => {
   return (
     <div className="navbarMain">
       <div className="leftnav">
-        <div className="logo">
-          <MarkGithubIcon size={"medium"} />
+        <div className="sideMenu">
+          <TemporaryDrawer />
         </div>
-        <div className="name">Dashboard</div>
+        <div className="logoBox">
+          {" "}
+          <div className="logo">
+            <MarkGithubIcon size={"medium"} />
+          </div>
+          <div className="name">Dashboard</div>
+        </div>
       </div>
 
       <div className="rightnav">
