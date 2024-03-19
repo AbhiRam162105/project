@@ -3,7 +3,7 @@ import React from "react";
 import Feed from "../Feed/Feed";
 import SideContent from "../SideContent/SideContent";
 import "./Body.css";
-import Repositories from "../../../static/Repositories";
+import Repositories from "../../../../static/Repositories";
 
 const Body = () => {
   return (

@@ -1,9 +1,10 @@
 .BodyContent {
   display: flex;
+  height: 100%;
 }
 .side {
   width: 20vw;
-  height: 92vh;
+  height: 100vh;
 
   border-right: 1px solid black;
 }

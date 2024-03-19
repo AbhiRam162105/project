@@ -24,3 +24,10 @@
   color: rgb(223, 223, 223);
   border-bottom: 1px solid rgb(223, 223, 223);
 }
+.filter {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.gap {
+  padding: 3em em;
+}
