@@ -6,7 +6,16 @@ import Button from "@mui/material/Button";
 
 import "./Sidebar.css";
 import { IconButton } from "@primer/react";
-import { ThreeBarsIcon } from "@primer/octicons-react";
+import {
+  CodeIcon,
+  DiscussionClosedIcon,
+  GitPullRequestIcon,
+  HomeFillIcon,
+  IssueOpenedIcon,
+  MarkGithubIcon,
+  ProjectIcon,
+  ThreeBarsIcon,
+} from "@primer/octicons-react";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -30,22 +39,43 @@ export default function TemporaryDrawer() {
   const list = () => (
     <div className="side-bar">
       <div className="title">
-        <h1>Github</h1>
+        <MarkGithubIcon size={"large"} />
       </div>
 
       <div className="side-bar-options">
         <div className="upper-options">
           <ul>
-            <li>Profile</li>
-            <li>My Note</li>
-            <li>PDF's</li>
+            <li>
+              <HomeFillIcon sx={{ margin: "20px" }} />
+              <span>Home</span>
+            </li>
+            <li>
+              <IssueOpenedIcon />
+              <span>Issues</span>
+            </li>
+            <li>
+              <GitPullRequestIcon />
+              <span>Pull Requests</span>
+            </li>
+            <li>
+              <ProjectIcon />
+              <span>Projects</span>
+            </li>
+            <li>
+              <DiscussionClosedIcon />
+              <span>Discussions</span>
+            </li>
+            <li>
+              <CodeIcon />
+              <span>Codespaces</span>
+            </li>
           </ul>
         </div>
 
         <div className="lower-options">
-          <ul>
+          {/* <ul>
             <li>Logout</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
