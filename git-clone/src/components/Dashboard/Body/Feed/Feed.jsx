@@ -91,12 +91,14 @@ export default function Feed() {
               flexDirection: "column",
               gap: "1em",
               margin: "2vw",
+
               height: "100%",
             }}
           >
+            <h1 className="HomeText">Home</h1>
             {/* Filter Button */}
             {repositories.slice(0, visibleRepos).map((repo, index) => (
-              <Box key={index} sx={{ width: 675 }}>
+              <Box key={index} sx={{ width: 750 }}>
                 <Card
                   variant="outlined"
                   sx={{
@@ -145,7 +147,8 @@ export default function Feed() {
               flexDirection: "column",
               gap: 2,
               overflowY: "auto",
-              marginLeft: "32px",
+
+              marginTop: "4vw",
             }}
           >
             {/* Example GitHub-style side card */}
