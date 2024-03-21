@@ -9,6 +9,8 @@ const Dashboard = () => {
     <ThemeProvider>
       <div className="App">
         <Navbar />
+        <div className="line-break">
+        </div>
         <Body />
       </div>
     </ThemeProvider>

@@ -8,7 +8,12 @@ html {
   padding: 0;
   background-color: #06090c;
 }
+
 .App {
   background-color: #06090c;
   color: rgb(224, 224, 224);
+}
+
+.line-break {
+  border-bottom: 1px solid gray;
 }

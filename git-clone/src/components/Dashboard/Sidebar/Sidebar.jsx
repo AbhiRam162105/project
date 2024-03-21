@@ -94,7 +94,7 @@ export default function TemporaryDrawer() {
             border: "1px solid white", // Add a white border
             color: "white", // Ensure the icon color is white
             "&:hover": {
-              backgroundColor: "rgba(255, 255, 255, 0.1)", // Optional: Add a hover effect
+              backgroundColor: "transparent", // Optional: Add a hover effect
             },
           }}
         />

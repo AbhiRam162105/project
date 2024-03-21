@@ -1,7 +1,9 @@
 .profile-page-wrapper {
     display: flex;
     min-height: 100vh;
+    color: whitesmoke;
     width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .user-profile-section {
