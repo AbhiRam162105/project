@@ -3,7 +3,7 @@ import React from 'react'
 import "./Profile.css"
 import Navbar from '../Dashboard/Navbar/Navbar/Navbar'
 import { UnderlineNav } from '@primer/react'
-import { BookIcon, IssueOpenedIcon, GitPullRequestIcon, CommentDiscussionIcon, EyeIcon } from '@primer/octicons-react';
+import { BookIcon, RepoIcon, GitPullRequestIcon, CommentDiscussionIcon, EyeIcon } from '@primer/octicons-react';
 
 
 
@@ -28,7 +28,7 @@ function Profile() {
                 </UnderlineNav.Item>
                 <UnderlineNav.Item
 
-                    icon={IssueOpenedIcon}
+                    icon={RepoIcon}
                     sx={{
                         backgroundColor: "transparent", // Make the background transparent
                         color: "whitesmoke", // Ensure the icon color is white
