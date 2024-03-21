@@ -24,6 +24,29 @@ function Profile() {
                 </div>
             </div>
 
+
+            <div className="user-repo-section">
+                <div className="repo">
+                    <h3 className='repo-name'>Repo Name</h3>
+                    <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ipsa magni, error, quasi distinctio laudantium aperiam ducimus sit eligendi aut labore tempore </p>
+                    <p className='language'>Language</p>
+                </div>
+                <div className="repo">
+                    <h3 className='repo-name'>Repo Name</h3>
+                    <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ipsa magni, error, quasi distinctio laudantium aperiam ducimus sit eligendi aut labore tempore </p>
+                    <p className='language'>Language</p>
+                </div>
+                <div className="repo">
+                    <h3 className='repo-name'>Repo Name</h3>
+                    <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ipsa magni, error, quasi distinctio laudantium aperiam ducimus sit eligendi aut labore tempore </p>
+                    <p className='language'>Language</p>
+                </div>
+                <div className="repo">
+                    <h3 className='repo-name'>Repo Name</h3>
+                    <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ipsa magni, error, quasi distinctio laudantium aperiam ducimus sit eligendi aut labore tempore </p>
+                    <p className='language'>Language</p>
+                </div>
+            </div>
         </div>
     )
 }

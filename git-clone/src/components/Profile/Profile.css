@@ -1,7 +1,5 @@
 .profile-page-wrapper {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     min-height: 100vh;
     width: 100%;
 }
@@ -11,10 +9,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    padding-top: 40px;
-    /* align-items: center; */
-    /* background-color: aliceblue; */
+    padding: 40px 10px;
 }
 
 .name {
@@ -41,10 +36,40 @@
 
 .follower {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 250px;
     height: 30px;
     gap: 10px;
     margin: 10px auto;
+}
+
+
+.user-repo-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+
+}
+
+.repo {
+
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    width: 400px;
+    height: 210px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repo-name {
+    color: #408ced;
+    font-size: 20px;
+}
+
+.description {
+    color: grey;
+    font-size: 15px;
 }
