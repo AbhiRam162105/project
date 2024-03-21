@@ -3,7 +3,7 @@ import React from 'react'
 import "./Profile.css"
 import Navbar from '../Dashboard/Navbar/Navbar/Navbar'
 import { UnderlineNav } from '@primer/react'
-import { CodeIcon, IssueOpenedIcon, GitPullRequestIcon, CommentDiscussionIcon, EyeIcon } from '@primer/octicons-react';
+import { BookIcon, IssueOpenedIcon, GitPullRequestIcon, CommentDiscussionIcon, EyeIcon } from '@primer/octicons-react';
 
 
 
@@ -15,7 +15,7 @@ function Profile() {
             <UnderlineNav aria-label="Repository">
                 <UnderlineNav.Item
                     aria-current="page"
-                    icon={CodeIcon}
+                    icon={BookIcon}
                     sx={{
                         backgroundColor: "transparent", // Make the background transparent
                         color: "whitesmoke", // Ensure the icon color is white
@@ -26,11 +26,9 @@ function Profile() {
                 >
                     Overview
                 </UnderlineNav.Item>
-
-
                 <UnderlineNav.Item
-                    aria-current="page"
-                    icon={CodeIcon}
+
+                    icon={IssueOpenedIcon}
                     sx={{
                         backgroundColor: "transparent", // Make the background transparent
                         color: "whitesmoke", // Ensure the icon color is white
@@ -39,13 +37,11 @@ function Profile() {
                         },
                     }}
                 >
-                    Repositries
+                    Repositories
                 </UnderlineNav.Item>
-
-
                 <UnderlineNav.Item
-                    aria-current="page"
-                    icon={CodeIcon}
+
+                    icon={GitPullRequestIcon}
                     sx={{
                         backgroundColor: "transparent", // Make the background transparent
                         color: "whitesmoke", // Ensure the icon color is white
@@ -54,13 +50,11 @@ function Profile() {
                         },
                     }}
                 >
-                    Code
+                    Projects
                 </UnderlineNav.Item>
-
-
                 <UnderlineNav.Item
-                    aria-current="page"
-                    icon={CodeIcon}
+
+                    icon={CommentDiscussionIcon}
                     sx={{
                         backgroundColor: "transparent", // Make the background transparent
                         color: "whitesmoke", // Ensure the icon color is white
@@ -69,10 +63,8 @@ function Profile() {
                         },
                     }}
                 >
-                    Code
+                    Packages
                 </UnderlineNav.Item>
-
-
             </UnderlineNav>
 
             <div className='profile-page-wrapper'>
