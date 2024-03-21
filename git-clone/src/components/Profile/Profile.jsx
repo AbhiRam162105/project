@@ -24,22 +24,55 @@ function Profile() {
                         },
                     }}
                 >
+                    Overview
+                </UnderlineNav.Item>
+
+
+                <UnderlineNav.Item
+                    aria-current="page"
+                    icon={CodeIcon}
+                    sx={{
+                        backgroundColor: "transparent", // Make the background transparent
+                        color: "whitesmoke", // Ensure the icon color is white
+                        "&:hover": {
+                            backgroundColor: "transparent",
+                        },
+                    }}
+                >
+                    Repositries
+                </UnderlineNav.Item>
+
+
+                <UnderlineNav.Item
+                    aria-current="page"
+                    icon={CodeIcon}
+                    sx={{
+                        backgroundColor: "transparent", // Make the background transparent
+                        color: "whitesmoke", // Ensure the icon color is white
+                        "&:hover": {
+                            backgroundColor: "transparent",
+                        },
+                    }}
+                >
                     Code
                 </UnderlineNav.Item>
 
-                <UnderlineNav.Item icon={IssueOpenedIcon} counter={30}>
-                    Issues
+
+                <UnderlineNav.Item
+                    aria-current="page"
+                    icon={CodeIcon}
+                    sx={{
+                        backgroundColor: "transparent", // Make the background transparent
+                        color: "whitesmoke", // Ensure the icon color is white
+                        "&:hover": {
+                            backgroundColor: "transparent",
+                        },
+                    }}
+                >
+                    Code
                 </UnderlineNav.Item>
-                <UnderlineNav.Item icon={GitPullRequestIcon} counter={3}>
-                    Pull Requests
-                </UnderlineNav.Item>
-                <UnderlineNav.Item icon={CommentDiscussionIcon}>Discussions</UnderlineNav.Item>
-                <UnderlineNav.Item icon={EyeIcon} counter={9}>
-                    Actions
-                </UnderlineNav.Item>
-                <UnderlineNav.Item icon={EyeIcon} counter={7}>
-                    Projects
-                </UnderlineNav.Item>
+
+
             </UnderlineNav>
 
             <div className='profile-page-wrapper'>
