@@ -6,63 +6,48 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import "./Feed.css";
-import { MarkGithubIcon } from "@primer/octicons-react";
+import { MarkGithubIcon, StarFillIcon } from "@primer/octicons-react";
+
+// Placeholder URL for the background image
+const backgroundImageUrl =
+  "https://github.githubassets.com/assets/bg-16e73268b1b3.jpg";
 
 const repositories = [
   {
     title: "React",
     description:
       "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    stars: 150000,
+    technology: "JavaScript",
     url: "https://github.com/facebook/react",
   },
   {
     title: "Vue.js",
     description: "The Progressive JavaScript Framework.",
+    stars: 180000,
+    technology: "JavaScript",
     url: "https://github.com/vuejs/vue",
   },
   {
     title: "Angular",
     description: "One framework. Mobile & desktop.",
+    stars: 60000,
+    technology: "TypeScript",
     url: "https://github.com/angular/angular",
   },
   {
-    title: "Django",
-    description:
-      "A high-level Python Web framework that encourages rapid development and clean, pragmatic design.",
-    url: "https://github.com/django/django",
-  },
-  {
-    title: "Flask",
-    description: "A lightweight WSGI web application framework.",
-    url: "https://github.com/pallets/flask",
-  },
-  {
-    title: "Express",
+    title: "Express.js",
     description: "Fast, unopinionated, minimalist web framework for Node.js",
+    stars: 50000,
+    technology: "JavaScript",
     url: "https://github.com/expressjs/express",
   },
   {
-    title: "Laravel",
-    description: "The PHP Framework For Web Artisans.",
-    url: "https://github.com/laravel/laravel",
-  },
-  {
-    title: "Spring Boot",
-    description:
-      "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can just run.",
-    url: "https://github.com/spring-projects/spring-boot",
-  },
-  {
-    title: "Ruby on Rails",
-    description:
-      "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby.",
-    url: "https://github.com/rails/rails",
-  },
-  {
-    title: "ASP.NET Core",
-    description:
-      "ASP.NET Core is a free and open-source web framework, a cross-platform successor to ASP.NET, and is used to build modern, cloud-based, and internet-connected applications.",
-    url: "https://github.com/dotnet/aspnetcore",
+    title: "Django",
+    description: "The web framework for perfectionists with deadlines.",
+    stars: 120000,
+    technology: "Python",
+    url: "https://github.com/django/django",
   },
 ];
 
@@ -91,12 +76,10 @@ export default function Feed() {
               flexDirection: "column",
               gap: "1em",
               margin: "2vw",
-
               height: "100%",
             }}
           >
             <h1 className="HomeText">Home</h1>
-            {/* Filter Button */}
             {repositories.slice(0, visibleRepos).map((repo, index) => (
               <Box key={index} sx={{ width: 750 }}>
                 <Card
@@ -147,12 +130,18 @@ export default function Feed() {
               flexDirection: "column",
               gap: 2,
               overflowY: "auto",
-
               marginTop: "4vw",
             }}
           >
-            {/* Example GitHub-style side card */}
-            <Card sx={{ width: 300 }}>
+            {/* GitHub-style side card with background image */}
+            <Card
+              sx={{
+                width: 300,
+                backgroundImage: `url(${backgroundImageUrl})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <CardContent>
                 <Typography variant="h5" component="div">
                   GitHub Trending
@@ -165,17 +154,44 @@ export default function Feed() {
                 <Button size="small">View Trending</Button>
               </CardActions>
             </Card>
-            <Card sx={{ width: 300 }}>
+            {/* Another GitHub-style side card with repository details */}
+            <Card
+              sx={{
+                width: 300,
+                height: 500,
+              }}
+            >
               <CardContent>
-                <Typography variant="h5" component="div">
-                  GitHub Trending
+                <Typography variant="h7" component="div">
+                  Explore Repositories
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Check out the most popular repositories on GitHub.
-                </Typography>
+                {repositories.slice(0, 3).map((repo, index) => (
+                  <Box key={index} sx={{ marginTop: 2 }}>
+                    <Typography variant="h6" component="div">
+                      <a
+                        href={repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {repo.title}
+                      </a>
+                    </Typography>
+                    <Typography variant="body2" color="text">
+                      {repo.description}
+                    </Typography>
+                    <Typography variant="body2" color="text">
+                      <StarFillIcon /> {repo.stars}
+                    </Typography>
+                    <Typography variant="body2" color="text">
+                      Technology: {repo.technology}
+                    </Typography>
+                    {index < repositories.slice(0, 3).length - 1 && <hr />}
+                  </Box>
+                ))}
               </CardContent>
+
               <CardActions>
-                <Button size="small">View Trending</Button>
+                <Button size="small">View More</Button>
               </CardActions>
             </Card>
           </Box>

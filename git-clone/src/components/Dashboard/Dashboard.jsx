@@ -12,7 +12,6 @@ const Dashboard = () => {
         <div className="line-break">
         </div>
         <Body />
-        
       </div>
     </ThemeProvider>
   );

@@ -9,6 +9,7 @@
 
 .MuiCard-root {
   background-color: black !important;
+
   box-shadow: none !important; /* Remove drop shadow */
   border: 1px solid rgb(223, 223, 223) !important;
   color: rgb(223, 223, 223) !important;
