@@ -66,7 +66,7 @@ export default function Feed() {
             display: "flex",
             height: "95vh",
             overflowY: "auto",
-            color: "white",
+            color: "whitesmoke",
           }}
         >
           <Box
